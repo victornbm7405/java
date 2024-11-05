@@ -1,0 +1,32 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="nomeDaUnidadeDePersistencia">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Classes de entidade do seu projeto -->
+        <class>br.com.fiap.model.Atendimento</class>
+        <class>br.com.fiap.model.ChatbotSessao</class>
+        <class>br.com.fiap.model.Diagnostico</class>
+        <class>br.com.fiap.model.Feedback</class>
+        <class>br.com.fiap.model.Funcionario</class>
+        <class>br.com.fiap.model.Mecanico</class>
+        <class>br.com.fiap.model.ServicoAgendado</class>
+        <class>br.com.fiap.model.TipoServico</class>
+        <class>br.com.fiap.model.Usuario</class>
+        <class>br.com.fiap.model.Veiculo</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL"/>
+            <property name="jakarta.persistence.jdbc.user" value="rm554557"/>
+            <property name="jakarta.persistence.jdbc.password" value="fiap24"/>
+            <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

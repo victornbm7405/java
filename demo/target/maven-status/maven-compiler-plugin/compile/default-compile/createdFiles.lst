@@ -1,0 +1,7 @@
+br\com\fiap\resource\MensagemResource.class
+br\com\fiap\util\MensagemService.class
+br\com\fiap\model\MensagemTO.class
+br\com\fiap\dao\MensagemDAO.class
+br\com\fiap\App.class
+br\com\fiap\model\Mensagem.class
+br\com\fiap\dao\ConexaoBD.class
